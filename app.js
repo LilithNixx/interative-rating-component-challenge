@@ -35,7 +35,7 @@ ratingNumbersContainer.addEventListener('click', e =>{
 
     function llamarBtnSubmit(){
         btnSubmit.addEventListener('click', ()=>{
-            cardContainer.style.visibility = 'hidden';
+            cardContainer.style.display = 'none';
             thankYouCard.style.visibility = 'visible';
         });
     }
