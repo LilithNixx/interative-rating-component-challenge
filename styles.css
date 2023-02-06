@@ -1,0 +1,214 @@
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(214, 32%, 13%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    background-color: var(--Very-Dark-Blue);
+}
+
+
+/*Main card container start*/
+.card-container, .thank-you-card {
+    width: 324px;
+    height: 358px;
+    padding:20px;
+    margin: 10% auto;
+
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+}
+
+
+.star-icon, .ratingNumber{
+    background-color: hsla(216, 12%, 54%, 0.199);
+    border-radius: 50%;
+
+    width: 45px;
+    height: 45px;
+
+    /*estilos unicos para botones*/
+    color: var(--Light-Grey);
+    border: none;
+}
+
+.star-icon img {
+    width: 19px;
+    height: 19px;
+
+    position: relative;
+    top: 13px;
+    left: 13px;
+}
+
+.main-title {
+    margin-top: 25px;
+    margin-bottom: 0.5em;
+
+    color: var(--White);
+}
+
+.main-text {
+    padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+
+    color: var(--Light-Grey);
+}
+
+.ratingNumbers-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.ratingNumber:hover {
+    background-color: var(--Light-Grey);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.ratingNumber:focus {
+    background-color: var(--Orange);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.btn {
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 30px;
+    color: var(--White);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    width: 279px;
+    height: 40px;
+    align-self: center;
+     
+}
+
+.btn:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+    cursor: pointer;
+}
+/*Main card container end*/
+
+/*Thank you card container start*/
+
+.thank-you-card {
+    margin-top: 5px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.ilustration {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ilustration img {
+    width: 110px;
+    height: 80px;
+}
+
+.selection-made {
+    color: var(--Orange);
+    background-color:hsla(216, 12%, 54%, 0.301);
+    border-radius: 12px;
+
+    width: 12em;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.thanks-title {
+    margin-top: 10px;
+    margin-bottom: 8px;
+
+    color: var(--White);
+}
+
+.thanks-text {
+    font-size: 14px;
+    text-align: center;
+    color: var(--Light-Grey);
+
+    padding: 5px;
+    margin: 0 0 20px 0;
+    line-height: 20px;
+}
+/*Thank you card container end*/
+
+/*Footer start*/
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+/*Footer end*/
+
+@media (min-width: 600px){
+
+    .card-container, .thank-you-card {
+        width: 416px;
+        height: 418px;
+        padding: 50px;
+    }
+
+    .btn {
+        width: 316px;
+        height: 42px;
+        margin: 0 auto;
+    }
+
+    .ratingNumber {
+        font-size: 17px;
+        font-size: 18px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .ilustration img {
+        width: 135px;
+        height: 100px;
+    }
+
+    .thanks-title {
+        margin-top: 20px;
+        margin-bottom: 12px;
+        font-size: 33px;
+    }
+
+    .thanks-text {
+        margin: 0;
+        padding: 0;
+        
+    }
+}
